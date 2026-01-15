@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Shop - Products</title>
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="sv-body">
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sv-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Kobit PC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">All Products</a></li>
+                            <li><a class="dropdown-item" href="portfolio.html">PC Builds</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="sv-main">
+        <div class="container py-5">
+            <h1 class="mb-4">Our Products</h1>
+            <p>Browse our selection of desktop PCs, laptops, components, and gaming accessories.</p>
+            
+            <!-- Table -->
+            <h2 class="mt-5 mb-3">Product Categories</h2>
+            <table class="table table-striped sv-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Price Range</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Desktop PCs</td>
+                        <td>Pre-built gaming and office computers</td>
+                        <td>$500 - $3000</td>
+                    </tr>
+                    <tr>
+                        <td>Laptops</td>
+                        <td>Portable computers for work and gaming</td>
+                        <td>$400 - $2500</td>
+                    </tr>
+                    <tr>
+                        <td>PC Components</td>
+                        <td>GPUs, CPUs, RAM, SSDs, Motherboards</td>
+                        <td>$50 - $2000</td>
+                    </tr>
+                    <tr>
+                        <td>Gaming Accessories</td>
+                        <td>Keyboards, mice, headsets, monitors</td>
+                        <td>$30 - $800</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <!-- Cards with products -->
+            <div class="row g-4 mt-3">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card sv-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gaming Desktop</h5>
+                            <p class="card-text">High-performance gaming PC with RTX graphics card.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card sv-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Office Laptop</h5>
+                            <p class="card-text">Reliable laptop perfect for work and studies.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card sv-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Graphics Card</h5>
+                            <p class="card-text">Latest GPU for gaming and content creation.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card sv-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gaming Keyboard</h5>
+                            <p class="card-text">Mechanical keyboard with RGB lighting.</p>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="sv-footer">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Kobit PC </h5>
+                    <p>Your trusted PC hardware store</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Student: Sibora Veseli</p>
+                    <p><a href="terms.html" class="text-white">Terms & Conditions</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
