@@ -1,0 +1,160 @@
+/* 
+ * Kobit PC - Custom Stylesheet
+ * All custom classes start with "sv-" (student initials)
+ * This file contains basic styling for the website
+ */
+
+/* Import Google Font */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling with student initials ID */
+#sv-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area - takes remaining space */
+.sv-main {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Navbar styling */
+.sv-navbar{
+  background-color: rgb(185, 226, 51) !important;
+  padding: 1rem 0;
+}
+
+.sv-navbar .navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+
+.sv-navbar .nav-link {
+  margin: 0 0.5rem;
+}
+
+.sv-navbar .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Footer styling */
+.sv-footer {
+  background-color:rgb(185, 226, 51) ;
+  color: white;
+  margin-top: auto;
+}
+
+.sv-footer a {
+  text-decoration: none;
+}
+
+.sv-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Card styling */
+.sv-card {
+  border: 1px solid #dee2e6;
+  transition: transform 0.2s;
+  height: 100%;
+}
+
+.sv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel image styling */
+.carousel-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Carousel caption styling */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Image placeholder for portfolio and team pages */
+.sv-image-placeholder {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* List styling */
+.sv-list {
+  line-height: 2;
+  padding-left: 20px;
+}
+
+.sv-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Table styling */
+.sv-table {
+  margin-top: 1rem;
+}
+
+/* Links section */
+.sv-links {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.sv-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sv-links li {
+  margin-bottom: 0.5rem;
+}
+
+.sv-links a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.sv-links a:hover {
+  text-decoration: underline;
+}
+
+/* Form styling */
+.sv-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sv-main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  }
+
+  .sv-form {
+    padding: 1rem;
+  }
+}
